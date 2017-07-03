@@ -74,17 +74,17 @@ Extra pack used in Visual Studio 2017: `Angular2Pack.vsix`
 
 ## Screenshots
 
-[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/01.png)]()
+[![](https://github.com/juniormayhe/GameOfDrones/blob/master/%23third-party/01.png?raw=true)]()
 
-[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/02.png)]()
+[![](https://github.com/juniormayhe/GameOfDrones/blob/master/%23third-party/02.png?raw=true)]()
 
-[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/03.png)]()
+[![](https://github.com/juniormayhe/GameOfDrones/blob/master/%23third-party/03.png?raw=true)]()
 
-[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/04.png)]()
+[![](https://github.com/juniormayhe/GameOfDrones/blob/master/%23third-party/04.png?raw=true)]()
 
-[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/05.png)]()
+[![](https://github.com/juniormayhe/GameOfDrones/blob/master/%23third-party/05.png?raw=true)]()
 
-[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/06.png)]()
+[![](https://github.com/juniormayhe/GameOfDrones/blob/master/%23third-party/06.png?raw=true)]()
 
 
 ## License

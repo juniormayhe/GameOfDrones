@@ -2,7 +2,7 @@
 
 [![](https://res.cloudinary.com/teepublic/image/private/s--lme7SsT2--/t_Preview/b_rgb:36538b,c_limit,f_jpg,h_630,q_90,w_630/v1494564832/production/designs/1598607_1.jpg)]()
 
-[GameOfDrones](https://github.com/juniormayhe/GameOfDrones) is Angular2 concept application for evaluation of Typescript and its integration with Visual Studio.
+[GameOfDrones](https://github.com/juniormayhe/GameOfDrones) is Angular2 concept application in NET Core 1.1 for evaluation of Typescript and its integration with Visual Studio.
 
 ## Related Packages
 Many of the core components and extensions live in their own repositories on NPM. For example:
@@ -70,6 +70,22 @@ Many of the core components and extensions live in their own repositories on NPM
   }
 }
 ```
+Extra pack used in Visual Studio 2017: `Angular2Pack.vsix`
+
+## Screenshots
+
+[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/01.jpg)]()
+
+[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/02.jpg)]()
+
+[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/03.jpg)]()
+
+[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/04.jpg)]()
+
+[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/05.jpg)]()
+
+[![](https://github.com/juniormayhe/GameOfDrones/#thirdparty/06.jpg)]()
+
 
 ## License
 

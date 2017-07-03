@@ -2,7 +2,9 @@
 
 [![](https://res.cloudinary.com/teepublic/image/private/s--lme7SsT2--/t_Preview/b_rgb:36538b,c_limit,f_jpg,h_630,q_90,w_630/v1494564832/production/designs/1598607_1.jpg)]()
 
-[GameOfDrones](https://github.com/juniormayhe/GameOfDrones) is Angular2 concept application in NET Core 1.1 for evaluation of Typescript and its integration with Visual Studio.
+[GameOfDrones](https://github.com/juniormayhe/GameOfDrones) is Angular 4 concept application in NET Core 1.1 for evaluation of Typescript and its integration with Visual Studio. 
+
+This app was intended to consume Web API service for communicating with an external database, but due to lack of time, this demonstration is using browser's native `localStorage` for persisting data such as game rounds and game setup.
 
 ## Related Packages
 Many of the core components and extensions live in their own repositories on NPM. For example:

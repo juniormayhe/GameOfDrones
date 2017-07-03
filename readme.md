@@ -1,4 +1,4 @@
-# Game of Drones / JokenPo game in Angular2
+# Game of Drones / JokenPo game in Angular4
 
 [![](https://res.cloudinary.com/teepublic/image/private/s--lme7SsT2--/t_Preview/b_rgb:36538b,c_limit,f_jpg,h_630,q_90,w_630/v1494564832/production/designs/1598607_1.jpg)]()
 

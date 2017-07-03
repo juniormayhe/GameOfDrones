@@ -1,0 +1,36 @@
+﻿
+<div class="panel panel-default scores">
+    <h3>Score</h3>
+    <div class="container" *ngIf="!scores || scores.length==0">
+        
+        <div class="row x-line container">
+            <p>
+                No winners yet
+            </p>
+        </div>
+    </div>
+
+    <div class="container game-score" *ngIf="scores && scores.length>0">
+        <div class="row bg-success">
+            <div class="col-xs-4">
+                <strong>Round</strong>
+            </div>
+            <div class="col-xs-8">
+                <strong>Winner</strong>
+            </div>
+        </div>
+        <div *ngFor="let item of scores" class="list-scores">
+            <div class="row">
+                <div class="col-xs-4">
+                    {{ item?.round }}
+                </div>
+                <div class="col-xs-8">
+                    {{ item?.winner}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

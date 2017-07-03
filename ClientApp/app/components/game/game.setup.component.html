@@ -1,0 +1,92 @@
+﻿<div class="jumbotron">
+    <div class="container">
+        <h2>SETUP</h2>
+
+        <div class="row">
+            <div class="col-md-7">
+
+                
+
+            </div>
+
+            <div class="col-md-5">
+
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel panel-default scores">
+                
+                <br />
+                <form class="form-inline" #thisForm="ngForm">
+
+                    <div class="container setup">
+                        <input name="move"
+                                class="form-control"
+                                [(ngModel)]="_item.move"
+                                placeholder="This"
+                                required />
+                        <label>&nbsp;kills&nbsp;</label>
+                        <input name="kills"
+                                class="form-control"
+                                [(ngModel)]="_item.kills"
+                                placeholder="what"
+                                required />
+                        <button name="btnAdd"
+                                class="btn btn-primary btn-plus"
+                                (click)="onAdd()"
+                                [disabled]="!_item">
+                            +
+                        </button>
+                    </div>
+                </form>
+                
+
+                <div class="container" *ngIf="!_moves || _moves.length==0">
+
+                    <div class="row x-line container">
+                        <p>
+                            No moves yet
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container game-score" *ngIf="_moves && _moves.length>0">
+                    <div class="row bg-success">
+                        <div class="col-xs-4">
+                            <strong>Move</strong>
+                        </div>
+                        <div class="col-xs-8">
+                            <strong>Kills</strong>
+                        </div>
+                    </div>
+                    <div *ngFor="let item of _moves" class="list-scores">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                {{ item?.move}}
+                            </div>
+                            <div class="col-xs-6">
+                                {{ item?.kills}}
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="javascript:" (click)="onRemove(item)">X</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="form-group col-xs-12">
+                <button name="btnSave"
+                        class="btn btn-lg btn-block btn-outline"
+                        (click)="onSave()"
+                        [disabled]="!_item">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,101 @@
+﻿<div class="jumbotron">
+    <div class="container">
+        <h2 class="blink blink-3">{{getTitle()}}</h2>
+        <div class="row">
+            <div class="col-md-8">
+
+                <form #thisForm="ngForm">
+
+                    <div *ngIf="!player1Moved">
+                        <h3 class="p1">{{_game.player1Name}}</h3>
+                        <div class="form-group row">
+                            <label for="player1" class="col-sm-2 col-form-label">
+                                Select Move:
+                            </label>
+                            <div class="col-sm-10">
+                                <select name="p1Move"
+                                        class="form-control"
+                                        [(ngModel)]="_game.move1"
+                                        placeholder="Select a move"
+                                        required>
+                                    <option *ngFor="let item of _moves"
+                                            [value]="item.move"
+                                            [attr.selected]="">
+                                        {{item.move}}
+                                    </option>
+                                    <!--<option>Paper</option>
+                                    <option>Rock</option>
+                                    <option>Scissors</option>-->
+                                </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button name="btnMove1"
+                                        class="btn btn-lg btn-block btn-outline"
+                                        (click)="onPlayer1Move()"
+                                        [disabled]="_game.round>=3">
+                                    OK
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div *ngIf="player1Moved">
+                        <h3 class="p2">{{_game.player2Name}}</h3>
+                        <div class="form-group row">
+                            <label for="player2" class="col-sm-2 col-form-label">
+                                Select Move:
+                            </label>
+                            <div class="col-sm-10">
+                                <select name="p2Move"
+                                        class="form-control"
+                                        [(ngModel)]="_game.move2"
+                                        placeholder="Select a move"
+                                        required>
+                                    <option *ngFor="let item of _moves"
+                                            [value]="item.move"
+                                            [attr.selected]="">
+                                        {{item.move}}
+                                    </option>
+                                    <!--<option>Paper</option>
+                                    <option>Rock</option>
+                                    <option>Scissors</option>-->
+                                </select>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button name="btnMove2"
+                                        class="btn btn-lg btn-block btn-outline"
+                                        (click)="onPlayer2Move()"
+                                        [disabled]="_game.round>=3">
+                                    OK
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
+            <div class="col-md-4">
+                <game-score [scores]="_scores"></game-score>
+            </div>
+
+        </div>
+            
+        <div class="alert alert-success">
+            <strong>Game has ended!</strong> <a href="/winner" class="alert-link">Processing results...</a> <img src="../../../../wwwroot/images/loading.gif" /> 
+        </div>
+        
+        
+    </div>
+</div>
